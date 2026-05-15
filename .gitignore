@@ -1,0 +1,4 @@
+ecommerce-frontend/node_modules/
+ecommerce/__pycache__/
+ecommerce/db.sqlite3
+ecommerce/venv/

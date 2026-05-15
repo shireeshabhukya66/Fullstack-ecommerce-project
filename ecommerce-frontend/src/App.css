@@ -1,0 +1,75 @@
+body.light-mode {
+    background-color: #f5f5f5;
+    color: black;
+    transition: 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Product Cards */
+.product-card {
+    margin-top: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.product-card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.08);
+}
+
+.card-title {
+    margin-bottom: 10px;
+}
+
+button {
+    border-radius: 8px;
+}
+
+/* DARK MODE CARD FIX */
+.dark-mode .card {
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #333;
+}
+
+/* Paragraphs inside cards */
+.dark-mode .card-text,
+.dark-mode .text-muted,
+.dark-mode small {
+    color: #d1d1d1 !important;
+}
+
+/* Badge */
+.dark-mode .badge {
+    background-color: #333 !important;
+    color: white !important;
+}
+
+/* Footer */
+.dark-mode footer {
+    background-color: #000 !important;
+    color: white;
+}
